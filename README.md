@@ -117,7 +117,7 @@ modeling:
 - **Validation**: Comprehensive cross-validation with multiple metrics
 
 ### Model Evaluation
-- **Metrics**: MAE, RMSE, R² score for regression performance
+- **Metrics**: MAE, RMSE, R^2 score for regression performance
 - **Validation**: Out-of-bag scoring and holdout test evaluation
 - **Monitoring**: Automated performance tracking and alerts
 
@@ -139,7 +139,7 @@ The pipeline processes NYC Airbnb listing data with the following workflow:
 
 Current model achieves:
 - **Mean Absolute Error**: ~$45 on test set
-- **R² Score**: 0.65+ explaining price variance
+- **R^2 Score**: 0.65+ explaining price variance
 - **Training Time**: <10 minutes on standard hardware
 - **Inference Time**: <100ms for batch predictions
 
@@ -202,20 +202,20 @@ This project is licensed under the MIT License - see [LICENSE.txt](LICENSE.txt) 
 
 ```
 NYC-Airbnb-ML-Pipeline/
-├── components/                 # Reusable pipeline components
-│   ├── get_data/              # Data download component
-│   ├── train_val_test_split/  # Data splitting component
-│   └── test_regression_model/ # Model testing component
-├── src/                       # Source code for custom components
-│   ├── basic_cleaning/        # Data cleaning implementation
-│   ├── data_check/           # Data validation implementation
-│   └── train_random_forest/   # Model training implementation
-├── images/                    # Documentation images
-├── config.yaml               # Pipeline configuration
-├── main.py                   # Pipeline orchestration
-├── MLproject                 # MLflow project definition
-├── environment.yml           # Conda environment specification
-└── README.md                 # Project documentation
+|-- components/                 # Reusable pipeline components
+|   |-- get_data/              # Data download component
+|   |-- train_val_test_split/  # Data splitting component
+|   \-- test_regression_model/ # Model testing component
+|-- src/                       # Source code for custom components
+|   |-- basic_cleaning/        # Data cleaning implementation
+|   |-- data_check/           # Data validation implementation
+|   \-- train_random_forest/   # Model training implementation
+|-- images/                    # Documentation images
+|-- config.yaml               # Pipeline configuration
+|-- main.py                   # Pipeline orchestration
+|-- MLproject                 # MLflow project definition
+|-- environment.yml           # Conda environment specification
+\-- README.md                 # Project documentation
 ```
 
 ## Support
